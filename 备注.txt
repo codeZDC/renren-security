@@ -1,84 +1,84 @@
-1.½éÉÜ
-1.1.ÏîÄ¿ÃèÊö
-renren-security (ÈËÈËÈ¨ÏŞÏµÍ³£©ÊÇÒ»Ì×ÇáÁ¿¼¶µÄÈ¨ÏŞÏµÍ³£¬Ö÷Òª°üÀ¨ÓÃ»§¹ÜÀí¡¢½ÇÉ«¹ÜÀí¡¢²¿ÃÅ¹ÜÀí¡¢²Ëµ¥¹Ü Àí¡¢¶¨Ê±ÈÎÎñ¡¢²ÎÊı¹ÜÀí¡¢×Öµä¹ÜÀí¡¢ÎÄ¼şÉÏ´«¡¢ÏµÍ³ÈÕÖ¾¡¢ÎÄÕÂ¹ÜÀí¡¢APPÄ£¿éµÈ¹¦ÄÜ¡£Æä ÖĞ£¬»¹ÓµÓĞ¶àÊı¾İÔ´¡¢Êı¾İÈ¨ÏŞ¡¢Redis»º´æ¶¯Ì¬¿ªÆôÓë¹Ø±Õ¡¢Í³Ò»Òì³£´¦ÀíµÈ¼¼ÊõÌØµã¡£
-1.2.ÏîÄ¿ÌØµã
-renren-security²ÉÓÃSpringBoot¡¢MyBatis¡¢Shiro¿ò¼Ü£¬¿ª·¢µÄÒ»Ì×È¨ÏŞÏµÍ³£¬¼«µÍÃÅ¼÷£¬ÄÃÀ´¼´ÓÃ¡£Éè¼ÆÖ®³õ£¬¾Í·Ç³£×¢ÖØ°²È«ĞÔ£¬ÎªÆóÒµÏµÍ³±£¼İ»¤º½£¬ÈÃÒ»ÇĞ¶¼±äµÃÈç´Ë¼òµ¥¡£
-Áé»îµÄÈ¨ÏŞ¿ØÖÆ£¬¿É¿ØÖÆµ½Ò³Ãæ»ò°´Å¥£¬Âú×ã¾ø´ó²¿·ÖµÄÈ¨ÏŞĞèÇó
-ÍêÉÆµÄ²¿ÃÅ¹ÜÀí¼°Êı¾İÈ¨ÏŞ£¬Í¨¹ı×¢½âÊµÏÖÊı¾İÈ¨ÏŞµÄ¿ØÖÆ
-ÍêÉÆµÄXSS·À·¶¼°½Å±¾¹ıÂË£¬³¹µ×¶Å¾øXSS¹¥»÷
-Ö§³ÖMySQL¡¢Oracle¡¢SQL Server¡¢PostgreSQLµÈÖ÷Á÷Êı¾İ¿â
-ÍÆ¼öÊ¹ÓÃ°¢ÀïÔÆ·şÎñÆ÷²¿ÊğÏîÄ¿£¬Ãâ·ÑÁìÈ¡°¢ÀïÔÆÓÅ»İÈ¯£¬Çëµã»÷Ãâ·ÑÁìÈ¡
-1.3.ÏîÄ¿½éÉÜ
-ÏîÄ¿Ò»¹²·ÖÎªËÄ¸öÄ£¿é
-renren-commonÎª¹«¹²Ä£¿é£¬ÆäËûÄ£¿éÒÔjar°üµÄĞÎÊ½ÒıÈë½øÈ¥£¬Ö÷ÒªÌá¹©Ğ©¹¤¾ßÀà£¬ÒÔ¼°renren-admin¡¢renren-apiÄ£¿é¹«¹²µÄentity¡¢mapper¡¢dao¡¢service·şÎñ£¬·ÀÖ¹Ò»¸ö¹¦ÄÜÖØ¸´¶à´Î±àĞ´´úÂë¡£
-renren-adminÎªºóÌ¨Ä£¿é£¬Ò²ÊÇÏµÍ³µÄºËĞÄ£¬ÓÃÀ´¿ª·¢ºóÌ¨¹ÜÀíÏµÍ³£¬¿ÉÒÔ´ò°ü³Éjar£¬²¿Êğµ½·şÎñÆ÷ÉÏÔËĞĞ£¬»òÕß´ò°ü³Éwar£¬·Åµ½Tomcat8.5+ÈİÆ÷ÀïÔËĞĞ¡£
-renren-apiÎª½Ó¿ÚÄ£¿é£¬Ö÷ÒªÊÇ¼ò»¯APP¿ª·¢£¬Èç£ºÎªÎ¢ĞÅĞ¡³ÌĞò¡¢IOS¡¢AndroidÌá¹©½Ó¿Ú£¬ÓµÓĞÒ»Ì×µ¥¶ÀµÄÓÃ»§ÌåÏµ£¬Ã»ÓĞÓërenren-adminÓÃ»§±í¹²ÓÃ£¬ÒòÎªrenren-adminÓÃ»§±íÀï´æ·ÅµÄÊÇÆóÒµÄÚ²¿ÈËÔ±ÕËºÅ£¬¾ßÓĞºóÌ¨¹ÜÀíÔ±È¨ÏŞ£¬¿ÉÒÔµÇÂ¼ºóÌ¨¹ÜÀíÏµÍ³£¬¶ørenren-apiÓÃ»§±íÀï´æ·ÅµÄÊÇÎÒÃÇµÄÕæÊµÓÃ»§£¬²»¾ß±¸µÇÂ¼ºóÌ¨¹ÜÀíÏµÍ³µÄÈ¨ÏŞ¡£renren-apiÖ÷ÒªÊÇÊµÏÖÁËÓÃ»§×¢²á¡¢µÇÂ¼¡¢½Ó¿ÚÈ¨ÏŞÈÏÖ¤¡¢»ñÈ¡µÇÂ¼ÓÃ»§µÈ¹¦ÄÜ£¬ÎªAPP½Ó¿ÚµÄ°²È«µ÷ÓÃ£¬Ìá¹©Ò»Ì×ÓÅÑÅµÄ½â¾ö·½°¸£¬´Ó¶ø¼ò»¯APP½Ó¿Ú¿ª·¢¡£
-renren-generatorÎª´úÂëÉú³ÉÆ÷Ä£¿é£¬Ö»ĞèÔÚMySQLÊı¾İ¿âÀï£¬´´½¨ºÃ±í½á¹¹£¬¾Í¿ÉÒÔÉú³ÉĞÂÔö¡¢ĞŞ¸Ä¡¢É¾³ı¡¢²éÑ¯¡¢µ¼³öµÈ²Ù×÷µÄ´úÂë£¬°üÀ¨entity¡¢mapper¡¢dao¡¢service¡¢controller¡¢Ò³ÃæµÈËùÓĞ´úÂë£¬ÏîÄ¿¿ª·¢ÉñÆ÷¡£
-1.4.±¾µØ²¿Êğ
-»·¾³ÒªÇóJDK1.8¡¢Tomcat8.5+¡¢MySQL5.5+
-Í¨¹ıgit£¬ÏÂÔØrenren-securityÔ´Âë£¬ÈçÏÂ£º
+1.ä»‹ç»
+1.1.é¡¹ç›®æè¿°
+renren-security (äººäººæƒé™ç³»ç»Ÿï¼‰æ˜¯ä¸€å¥—è½»é‡çº§çš„æƒé™ç³»ç»Ÿï¼Œä¸»è¦åŒ…æ‹¬ç”¨æˆ·ç®¡ç†ã€è§’è‰²ç®¡ç†ã€éƒ¨é—¨ç®¡ç†ã€èœå•ç®¡ ç†ã€å®šæ—¶ä»»åŠ¡ã€å‚æ•°ç®¡ç†ã€å­—å…¸ç®¡ç†ã€æ–‡ä»¶ä¸Šä¼ ã€ç³»ç»Ÿæ—¥å¿—ã€æ–‡ç« ç®¡ç†ã€APPæ¨¡å—ç­‰åŠŸèƒ½ã€‚å…¶ ä¸­ï¼Œè¿˜æ‹¥æœ‰å¤šæ•°æ®æºã€æ•°æ®æƒé™ã€Redisç¼“å­˜åŠ¨æ€å¼€å¯ä¸å…³é—­ã€ç»Ÿä¸€å¼‚å¸¸å¤„ç†ç­‰æŠ€æœ¯ç‰¹ç‚¹ã€‚
+1.2.é¡¹ç›®ç‰¹ç‚¹
+renren-securityé‡‡ç”¨SpringBootã€MyBatisã€Shiroæ¡†æ¶ï¼Œå¼€å‘çš„ä¸€å¥—æƒé™ç³»ç»Ÿï¼Œæä½é—¨æ§›ï¼Œæ‹¿æ¥å³ç”¨ã€‚è®¾è®¡ä¹‹åˆï¼Œå°±éå¸¸æ³¨é‡å®‰å…¨æ€§ï¼Œä¸ºä¼ä¸šç³»ç»Ÿä¿é©¾æŠ¤èˆªï¼Œè®©ä¸€åˆ‡éƒ½å˜å¾—å¦‚æ­¤ç®€å•ã€‚
+çµæ´»çš„æƒé™æ§åˆ¶ï¼Œå¯æ§åˆ¶åˆ°é¡µé¢æˆ–æŒ‰é’®ï¼Œæ»¡è¶³ç»å¤§éƒ¨åˆ†çš„æƒé™éœ€æ±‚
+å®Œå–„çš„éƒ¨é—¨ç®¡ç†åŠæ•°æ®æƒé™ï¼Œé€šè¿‡æ³¨è§£å®ç°æ•°æ®æƒé™çš„æ§åˆ¶
+å®Œå–„çš„XSSé˜²èŒƒåŠè„šæœ¬è¿‡æ»¤ï¼Œå½»åº•æœç»XSSæ”»å‡»
+æ”¯æŒMySQLã€Oracleã€SQL Serverã€PostgreSQLç­‰ä¸»æµæ•°æ®åº“
+æ¨èä½¿ç”¨é˜¿é‡Œäº‘æœåŠ¡å™¨éƒ¨ç½²é¡¹ç›®ï¼Œå…è´¹é¢†å–é˜¿é‡Œäº‘ä¼˜æƒ åˆ¸ï¼Œè¯·ç‚¹å‡»å…è´¹é¢†å–
+1.3.é¡¹ç›®ä»‹ç»
+é¡¹ç›®ä¸€å…±åˆ†ä¸ºå››ä¸ªæ¨¡å—
+renren-commonä¸ºå…¬å…±æ¨¡å—ï¼Œå…¶ä»–æ¨¡å—ä»¥jaråŒ…çš„å½¢å¼å¼•å…¥è¿›å»ï¼Œä¸»è¦æä¾›äº›å·¥å…·ç±»ï¼Œä»¥åŠrenren-adminã€renren-apiæ¨¡å—å…¬å…±çš„entityã€mapperã€daoã€serviceæœåŠ¡ï¼Œé˜²æ­¢ä¸€ä¸ªåŠŸèƒ½é‡å¤å¤šæ¬¡ç¼–å†™ä»£ç ã€‚
+renren-adminä¸ºåå°æ¨¡å—ï¼Œä¹Ÿæ˜¯ç³»ç»Ÿçš„æ ¸å¿ƒï¼Œç”¨æ¥å¼€å‘åå°ç®¡ç†ç³»ç»Ÿï¼Œå¯ä»¥æ‰“åŒ…æˆjarï¼Œéƒ¨ç½²åˆ°æœåŠ¡å™¨ä¸Šè¿è¡Œï¼Œæˆ–è€…æ‰“åŒ…æˆwarï¼Œæ”¾åˆ°Tomcat8.5+å®¹å™¨é‡Œè¿è¡Œã€‚
+renren-apiä¸ºæ¥å£æ¨¡å—ï¼Œä¸»è¦æ˜¯ç®€åŒ–APPå¼€å‘ï¼Œå¦‚ï¼šä¸ºå¾®ä¿¡å°ç¨‹åºã€IOSã€Androidæä¾›æ¥å£ï¼Œæ‹¥æœ‰ä¸€å¥—å•ç‹¬çš„ç”¨æˆ·ä½“ç³»ï¼Œæ²¡æœ‰ä¸renren-adminç”¨æˆ·è¡¨å…±ç”¨ï¼Œå› ä¸ºrenren-adminç”¨æˆ·è¡¨é‡Œå­˜æ”¾çš„æ˜¯ä¼ä¸šå†…éƒ¨äººå‘˜è´¦å·ï¼Œå…·æœ‰åå°ç®¡ç†å‘˜æƒé™ï¼Œå¯ä»¥ç™»å½•åå°ç®¡ç†ç³»ç»Ÿï¼Œè€Œrenren-apiç”¨æˆ·è¡¨é‡Œå­˜æ”¾çš„æ˜¯æˆ‘ä»¬çš„çœŸå®ç”¨æˆ·ï¼Œä¸å…·å¤‡ç™»å½•åå°ç®¡ç†ç³»ç»Ÿçš„æƒé™ã€‚renren-apiä¸»è¦æ˜¯å®ç°äº†ç”¨æˆ·æ³¨å†Œã€ç™»å½•ã€æ¥å£æƒé™è®¤è¯ã€è·å–ç™»å½•ç”¨æˆ·ç­‰åŠŸèƒ½ï¼Œä¸ºAPPæ¥å£çš„å®‰å…¨è°ƒç”¨ï¼Œæä¾›ä¸€å¥—ä¼˜é›…çš„è§£å†³æ–¹æ¡ˆï¼Œä»è€Œç®€åŒ–APPæ¥å£å¼€å‘ã€‚
+renren-generatorä¸ºä»£ç ç”Ÿæˆå™¨æ¨¡å—ï¼Œåªéœ€åœ¨MySQLæ•°æ®åº“é‡Œï¼Œåˆ›å»ºå¥½è¡¨ç»“æ„ï¼Œå°±å¯ä»¥ç”Ÿæˆæ–°å¢ã€ä¿®æ”¹ã€åˆ é™¤ã€æŸ¥è¯¢ã€å¯¼å‡ºç­‰æ“ä½œçš„ä»£ç ï¼ŒåŒ…æ‹¬entityã€mapperã€daoã€serviceã€controllerã€é¡µé¢ç­‰æ‰€æœ‰ä»£ç ï¼Œé¡¹ç›®å¼€å‘ç¥å™¨ã€‚
+1.4.æœ¬åœ°éƒ¨ç½²
+ç¯å¢ƒè¦æ±‚JDK1.8ã€Tomcat8.5+ã€MySQL5.5+
+é€šè¿‡gitï¼Œä¸‹è½½renren-securityæºç ï¼Œå¦‚ä¸‹ï¼š
 git clone
     git clone https://gitee.com/renrenio/renren-security.git
  
-ÓÃ idea ´ò¿ªÏîÄ¿£¬ File -> Open ÈçÏÂÍ¼:
+ç”¨ idea æ‰“å¼€é¡¹ç›®ï¼Œ File -> Open å¦‚ä¸‹å›¾:
 
 
-ÓÃ eclipse ´ò¿ªÏîÄ¿£¬ÈçÏÂÍ¼:
-
-
-
+ç”¨ eclipse æ‰“å¼€é¡¹ç›®ï¼Œå¦‚ä¸‹å›¾:
 
 
 
-´´½¨Êı¾İ¿â renren_security £¬Êı¾İ¿â±àÂëÎª UTF-8
-Ö´ĞĞÊı¾İ¿â½Å±¾£¬ÈçMySQLÊı¾İ¿â£¬ÔòÖ´ĞĞ db/mysql.sql ÎÄ¼ş£¬³õÊ¼»¯Êı¾İ
-ĞŞ¸Äapplication-dev.yml£¬¸ü¸ÄÊı¾İ¿âÕËºÅºÍÃÜÂë
-¡¾Æô¶¯renren-adminÏîÄ¿¡¿
-ÔËĞĞio.renren.AdminApplication.javaµÄmain·½·¨£¬Ôò¿ÉÆô¶¯renren-adminÏîÄ¿
-ÏîÄ¿·ÃÎÊÂ·¾¶£ºhttp://localhost:8080/renren-admin
-ÕËºÅÃÜÂë£ºadmin/admin
-SwaggerÂ·¾¶£ºhttp://localhost:8080/renren-admin/swagger/index.html
-Swagger×¢½âÂ·¾¶£ºhttp://localhost:8080/renren-admin/swagger-ui.html
-¡¾Æô¶¯renren-apiÏîÄ¿¡¿
-Eclipse¡¢IDEAÔËĞĞApiApplication.java£¬Ôò¿ÉÆô¶¯ÏîÄ¿¡¾renren-api¡¿
-SwaggerÂ·¾¶£ºhttp://localhost:8081/renren-api/swagger-ui.html
-Æô¶¯renren-generatorÏîÄ¿¡¿
-Eclipse¡¢IDEAÔËĞĞGeneratorApplication.java£¬Ôò¿ÉÆô¶¯ÏîÄ¿¡¾renren-generator¡¿
-ÏîÄ¿·ÃÎÊÂ·¾¶£ºhttp://localhost:8082/renren-generator
-1.5.»ñÈ¡°ïÖú
-GitµØÖ·£ºhttps://gitee.com/renrenio/renren-security
-¹Ù·½ÉçÇø£ºhttp://www.renren.io/community
-ÈçĞèÑ°Çó°ïÖú¡¢ÏîÄ¿½¨Òé¡¢¼¼ÊõÌÖÂÛµÈ£¬ÇëÒÆ²½µ½¹Ù·½ÉçÇø£¬ÎÒ»áÔÚµÚÒ»Ê±¼ä½øĞĞ½â´ğ»ò»Ø¸´
-ÈçĞè¹Ø×¢ÏîÄ¿×îĞÂ¶¯Ì¬£¬ÇëWatch¡¢StarÏîÄ¿£¬Í¬Ê±Ò²ÊÇ¶ÔÏîÄ¿×îºÃµÄÖ§³Ö
-2.ÏîÄ¿ÊµÕ½
-2.1.¹¦ÄÜÃèÊö
-ÎÒÃÇÀ´Íê³ÉÒ»¸öÉÌÆ·µÄÁĞ±í¡¢Ìí¼Ó¡¢ĞŞ¸Ä¡¢É¾³ı¹¦ÄÜ£¬ÊìÏ¤ÈçºÎ¿ìËÙ¿ª·¢×Ô¼ºµÄÒµÎñ¹¦ÄÜÄ£¿é¡£
-ÎÒÃÇÏÈ½¨Ò»¸öÉÌÆ·±ítb_goods£¬±í½á¹¹ÈçÏÂËùÊ¾£º
+
+
+
+åˆ›å»ºæ•°æ®åº“ renren_security ï¼Œæ•°æ®åº“ç¼–ç ä¸º UTF-8
+æ‰§è¡Œæ•°æ®åº“è„šæœ¬ï¼Œå¦‚MySQLæ•°æ®åº“ï¼Œåˆ™æ‰§è¡Œ db/mysql.sql æ–‡ä»¶ï¼Œåˆå§‹åŒ–æ•°æ®
+ä¿®æ”¹application-dev.ymlï¼Œæ›´æ”¹æ•°æ®åº“è´¦å·å’Œå¯†ç 
+ã€å¯åŠ¨renren-adminé¡¹ç›®ã€‘
+è¿è¡Œio.renren.AdminApplication.javaçš„mainæ–¹æ³•ï¼Œåˆ™å¯å¯åŠ¨renren-adminé¡¹ç›®
+é¡¹ç›®è®¿é—®è·¯å¾„ï¼šhttp://localhost:8080/renren-admin
+è´¦å·å¯†ç ï¼šadmin/admin
+Swaggerè·¯å¾„ï¼šhttp://localhost:8080/renren-admin/swagger/index.html
+Swaggeræ³¨è§£è·¯å¾„ï¼šhttp://localhost:8080/renren-admin/swagger-ui.html
+ã€å¯åŠ¨renren-apié¡¹ç›®ã€‘
+Eclipseã€IDEAè¿è¡ŒApiApplication.javaï¼Œåˆ™å¯å¯åŠ¨é¡¹ç›®ã€renren-apiã€‘
+Swaggerè·¯å¾„ï¼šhttp://localhost:8081/renren-api/swagger-ui.html
+å¯åŠ¨renren-generatoré¡¹ç›®ã€‘
+Eclipseã€IDEAè¿è¡ŒGeneratorApplication.javaï¼Œåˆ™å¯å¯åŠ¨é¡¹ç›®ã€renren-generatorã€‘
+é¡¹ç›®è®¿é—®è·¯å¾„ï¼šhttp://localhost:8082/renren-generator
+1.5.è·å–å¸®åŠ©
+Gitåœ°å€ï¼šhttps://gitee.com/renrenio/renren-security
+å®˜æ–¹ç¤¾åŒºï¼šhttp://www.renren.io/community
+å¦‚éœ€å¯»æ±‚å¸®åŠ©ã€é¡¹ç›®å»ºè®®ã€æŠ€æœ¯è®¨è®ºç­‰ï¼Œè¯·ç§»æ­¥åˆ°å®˜æ–¹ç¤¾åŒºï¼Œæˆ‘ä¼šåœ¨ç¬¬ä¸€æ—¶é—´è¿›è¡Œè§£ç­”æˆ–å›å¤
+å¦‚éœ€å…³æ³¨é¡¹ç›®æœ€æ–°åŠ¨æ€ï¼Œè¯·Watchã€Staré¡¹ç›®ï¼ŒåŒæ—¶ä¹Ÿæ˜¯å¯¹é¡¹ç›®æœ€å¥½çš„æ”¯æŒ
+2.é¡¹ç›®å®æˆ˜
+2.1.åŠŸèƒ½æè¿°
+æˆ‘ä»¬æ¥å®Œæˆä¸€ä¸ªå•†å“çš„åˆ—è¡¨ã€æ·»åŠ ã€ä¿®æ”¹ã€åˆ é™¤åŠŸèƒ½ï¼Œç†Ÿæ‚‰å¦‚ä½•å¿«é€Ÿå¼€å‘è‡ªå·±çš„ä¸šåŠ¡åŠŸèƒ½æ¨¡å—ã€‚
+æˆ‘ä»¬å…ˆå»ºä¸€ä¸ªå•†å“è¡¨tb_goodsï¼Œè¡¨ç»“æ„å¦‚ä¸‹æ‰€ç¤ºï¼š
 create table
       CREATE TABLE `tb_goods` (
         `goods_id` bigint NOT NULL AUTO_INCREMENT,
-        `name` varchar(50) COMMENT 'ÉÌÆ·Ãû',
-        `intro` varchar(500) COMMENT '½éÉÜ',
-        `price` decimal(10,2) COMMENT '¼Û¸ñ',
-        `num` int COMMENT 'ÊıÁ¿',
+        `name` varchar(50) COMMENT 'å•†å“å',
+        `intro` varchar(500) COMMENT 'ä»‹ç»',
+        `price` decimal(10,2) COMMENT 'ä»·æ ¼',
+        `num` int COMMENT 'æ•°é‡',
         PRIMARY KEY (`goods_id`)
-      ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='ÉÌÆ·¹ÜÀí';
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='å•†å“ç®¡ç†';
          
-2.2.Ê¹ÓÃ´úÂëÉú³ÉÆ÷
-Ê¹ÓÃ´úÂëÉú³ÉÆ÷Ç°£¬ÎÒÃÇÏÈÀ´¿´ÏÂ´úÂëÉú³ÉÆ÷µÄÅäÖÃ£¬¿´¿´ÄÇĞ©ÊÇ¿ÉÅäÖÃµÄ£¬´ò¿ªrenren-generatorÄ£¿éµÄÅäÖÃÎÄ¼şgenerator.properties£¬ÈçÏÂËùÊ¾:
+2.2.ä½¿ç”¨ä»£ç ç”Ÿæˆå™¨
+ä½¿ç”¨ä»£ç ç”Ÿæˆå™¨å‰ï¼Œæˆ‘ä»¬å…ˆæ¥çœ‹ä¸‹ä»£ç ç”Ÿæˆå™¨çš„é…ç½®ï¼Œçœ‹çœ‹é‚£äº›æ˜¯å¯é…ç½®çš„ï¼Œæ‰“å¼€renren-generatoræ¨¡å—çš„é…ç½®æ–‡ä»¶generator.propertiesï¼Œå¦‚ä¸‹æ‰€ç¤º:
 conf file
-    #´úÂëÉú³ÉÆ÷£¬ÅäÖÃĞÅÏ¢
+    #ä»£ç ç”Ÿæˆå™¨ï¼Œé…ç½®ä¿¡æ¯
     mainPath=io.renren
-    #°üÃû
+    #åŒ…å
     package=io.renren.modules
     moduleName=demo
-    #×÷Õß
+    #ä½œè€…
     author=chenshun
     #Email
     email=sunlightcs@gmail.com
-    #±íÇ°×º(ÀàÃû²»»á°üº¬±íÇ°×º)
+    #è¡¨å‰ç¼€(ç±»åä¸ä¼šåŒ…å«è¡¨å‰ç¼€)
     tablePrefix=tb_
-    #ÀàĞÍ×ª»»£¬ÅäÖÃĞÅÏ¢
+    #ç±»å‹è½¬æ¢ï¼Œé…ç½®ä¿¡æ¯
     tinyint=Integer
     smallint=Integer
     mediumint=Integer
@@ -99,9 +99,9 @@ conf file
     datetime=Date
     timestamp=Date
          
-ÉÏÃæµÄÅäÖÃÎÄ¼ş£¬¿ÉÒÔÅäÖÃ°üÃû¡¢×÷ÕßĞÅÏ¢¡¢±íÇ°×º¡¢Ä£¿éÃû³Æ¡¢ÀàĞÍ×ª»»µÈĞÅÏ¢¡£ÆäÖĞ£¬Àà ĞÍ×ª»»ÊÇÖ¸£¬MySQLÖĞµÄÀàĞÍÓëJavaBeanÖĞµÄÀàĞÍ£¬ÊÇÔõÃ´Ò»¸ö¶ÔÓ¦¹ØÏµ¡£Èç¹ûÓĞÈ±ÉÙµÄÀà ĞÍ£¬¿É×ÔĞĞÔÚgenerator.propertiesÎÄ¼şÖĞ²¹³ä¡£
+ä¸Šé¢çš„é…ç½®æ–‡ä»¶ï¼Œå¯ä»¥é…ç½®åŒ…åã€ä½œè€…ä¿¡æ¯ã€è¡¨å‰ç¼€ã€æ¨¡å—åç§°ã€ç±»å‹è½¬æ¢ç­‰ä¿¡æ¯ã€‚å…¶ä¸­ï¼Œç±» å‹è½¬æ¢æ˜¯æŒ‡ï¼ŒMySQLä¸­çš„ç±»å‹ä¸JavaBeanä¸­çš„ç±»å‹ï¼Œæ˜¯æ€ä¹ˆä¸€ä¸ªå¯¹åº”å…³ç³»ã€‚å¦‚æœæœ‰ç¼ºå°‘çš„ç±» å‹ï¼Œå¯è‡ªè¡Œåœ¨generator.propertiesæ–‡ä»¶ä¸­è¡¥å……ã€‚
 
-ÔÙ¿´¿´renren-generatorÄ£¿éµÄapplication.ymlÅäÖÃÎÄ¼ş£¬ÎÒÃÇÖ»ÒªĞŞ¸ÄÊı¾İ¿âÃû¡¢ÕË ºÅ¡¢ÃÜÂë£¬¾Í¿ÉÒÔÁË¡£ÆäÖĞ£¬Êı¾İ¿âÃûÊÇÖ¸´ıÉú³ÉµÄ±í£¬ËùÔÚµÄÊı¾İ¿â¡£
+å†çœ‹çœ‹renren-generatoræ¨¡å—çš„application.ymlé…ç½®æ–‡ä»¶ï¼Œæˆ‘ä»¬åªè¦ä¿®æ”¹æ•°æ®åº“åã€è´¦ å·ã€å¯†ç ï¼Œå°±å¯ä»¥äº†ã€‚å…¶ä¸­ï¼Œæ•°æ®åº“åæ˜¯æŒ‡å¾…ç”Ÿæˆçš„è¡¨ï¼Œæ‰€åœ¨çš„æ•°æ®åº“ã€‚
 conf file
             # Tomcat
     server:
@@ -124,40 +124,40 @@ conf file
             date-format: yyyy-MM-dd HH:mm:ss
         resources:
                 static-locations: classpath:/static/,classpath:/views/
-    # MybatisÅäÖÃ
+    # Mybatisé…ç½®
     mybatis:
         mapperLocations: classpath:mapper/**/*.xml
          
-ÔÚÊı¾İ¿ârenren_securityÖĞ£¬Ö´ĞĞ½¨±íÓï¾ä£¬´´½¨tb_goods±í£¬ÔÙÆô¶¯renren-generatorÏîÄ¿£¬ÔËĞĞGeneratorApplication.javaµÄmain·½·¨¼´¿É
-ÏîÄ¿·ÃÎÊÂ·¾¶£ºhttp://localhost:8082/renren-generator
+åœ¨æ•°æ®åº“renren_securityä¸­ï¼Œæ‰§è¡Œå»ºè¡¨è¯­å¥ï¼Œåˆ›å»ºtb_goodsè¡¨ï¼Œå†å¯åŠ¨renren-generatoré¡¹ç›®ï¼Œè¿è¡ŒGeneratorApplication.javaçš„mainæ–¹æ³•å³å¯
+é¡¹ç›®è®¿é—®è·¯å¾„ï¼šhttp://localhost:8082/renren-generator
 
 
-ÎÒÃÇÖ»Ğè¹´Ñ¡tb_goods£¬µã»÷¡¾Éú³É´úÂë¡¿°´Å¥£¬Ôò¿ÉÉú³ÉÏàÓ¦´úÂë£¬ÈçÏÂËùÊ¾£º
+æˆ‘ä»¬åªéœ€å‹¾é€‰tb_goodsï¼Œç‚¹å‡»ã€ç”Ÿæˆä»£ç ã€‘æŒ‰é’®ï¼Œåˆ™å¯ç”Ÿæˆç›¸åº”ä»£ç ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
 
-ÎÒÃÇÀ´¿´ÏÂÉú³ÉµÄ´úÂë½á¹¹£¬ÈçÏÂËùÊ¾£º
+æˆ‘ä»¬æ¥çœ‹ä¸‹ç”Ÿæˆçš„ä»£ç ç»“æ„ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
 
-sqlÓï¾äÒ²Éú³ÉÁË
-Éú³ÉºÃ´úÂëºó£¬ÎÒÃÇÖ»ĞèÔÚÊı¾İ¿ârenren_securityÖĞ£¬Ö´ĞĞgoods_menu.sqlÓï¾ä£¬Õâ¸öSQLÊÇÉú³É²Ëµ¥µÄ£¬SQLÓï¾äÈçÏÂËùÊ¾£º
+sqlè¯­å¥ä¹Ÿç”Ÿæˆäº†
+ç”Ÿæˆå¥½ä»£ç åï¼Œæˆ‘ä»¬åªéœ€åœ¨æ•°æ®åº“renren_securityä¸­ï¼Œæ‰§è¡Œgoods_menu.sqlè¯­å¥ï¼Œè¿™ä¸ªSQLæ˜¯ç”Ÿæˆèœå•çš„ï¼ŒSQLè¯­å¥å¦‚ä¸‹æ‰€ç¤ºï¼š
 sql file
-    -- ²Ëµ¥SQL
+    -- èœå•SQL
     INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
-        VALUES ('48', 'ÉÌÆ·¹ÜÀí', 'modules/demo/goods.html', NULL, '1', 'larry-10109', '6');
-    -- °´Å¥¸¸²Ëµ¥ID
+        VALUES ('48', 'å•†å“ç®¡ç†', 'modules/demo/goods.html', NULL, '1', 'larry-10109', '6');
+    -- æŒ‰é’®çˆ¶èœå•ID
     set @parentId = @@identity;
-    -- ²Ëµ¥¶ÔÓ¦°´Å¥SQL
+    -- èœå•å¯¹åº”æŒ‰é’®SQL
     INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
-        SELECT @parentId, '²é¿´', null, 'demo:goods:list,demo:goods:info', '2', null, '6';
+        SELECT @parentId, 'æŸ¥çœ‹', null, 'demo:goods:list,demo:goods:info', '2', null, '6';
     INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
-        SELECT @parentId, 'ĞÂÔö', null, 'demo:goods:save', '2', null, '6';
+        SELECT @parentId, 'æ–°å¢', null, 'demo:goods:save', '2', null, '6';
     INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
-        SELECT @parentId, 'ĞŞ¸Ä', null, 'demo:goods:update', '2', null, '6';
+        SELECT @parentId, 'ä¿®æ”¹', null, 'demo:goods:update', '2', null, '6';
     INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
-        SELECT @parentId, 'É¾³ı', null, 'demo:goods:delete', '2', null, '6';
+        SELECT @parentId, 'åˆ é™¤', null, 'demo:goods:delete', '2', null, '6';
     
         
-½ÓÏÂÀ´£¬ÔÙ°ÑmainÄ¿Â¼¸²¸Çrenren-adminÀïµÄmainÄ¿Â¼¼´¿É£¬Æô¶¯renren-adminÏîÄ¿£¬ÈçÏÂËùÊ¾£º
+æ¥ä¸‹æ¥ï¼Œå†æŠŠmainç›®å½•è¦†ç›–renren-adminé‡Œçš„mainç›®å½•å³å¯ï¼Œå¯åŠ¨renren-adminé¡¹ç›®ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
 
-ÏÖÔÚ£¬ÎÒÃÇ¾Í¿ÉÒÔĞÂÔö¡¢ĞŞ¸Ä¡¢É¾³ı¡¢ÅúÁ¿É¾³ıµÈ²Ù×÷
+ç°åœ¨ï¼Œæˆ‘ä»¬å°±å¯ä»¥æ–°å¢ã€ä¿®æ”¹ã€åˆ é™¤ã€æ‰¹é‡åˆ é™¤ç­‰æ“ä½œ
 
 
-¾èÔù»ñÈ¡ÍêÕû°æ
+æèµ è·å–å®Œæ•´ç‰ˆ

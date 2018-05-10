@@ -1,0 +1,163 @@
+1.介绍
+1.1.项目描述
+renren-security (人人权限系统）是一套轻量级的权限系统，主要包括用户管理、角色管理、部门管理、菜单管 理、定时任务、参数管理、字典管理、文件上传、系统日志、文章管理、APP模块等功能。其 中，还拥有多数据源、数据权限、Redis缓存动态开启与关闭、统一异常处理等技术特点。
+1.2.项目特点
+renren-security采用SpringBoot、MyBatis、Shiro框架，开发的一套权限系统，极低门槛，拿来即用。设计之初，就非常注重安全性，为企业系统保驾护航，让一切都变得如此简单。
+灵活的权限控制，可控制到页面或按钮，满足绝大部分的权限需求
+完善的部门管理及数据权限，通过注解实现数据权限的控制
+完善的XSS防范及脚本过滤，彻底杜绝XSS攻击
+支持MySQL、Oracle、SQL Server、PostgreSQL等主流数据库
+推荐使用阿里云服务器部署项目，免费领取阿里云优惠券，请点击免费领取
+1.3.项目介绍
+项目一共分为四个模块
+renren-common为公共模块，其他模块以jar包的形式引入进去，主要提供些工具类，以及renren-admin、renren-api模块公共的entity、mapper、dao、service服务，防止一个功能重复多次编写代码。
+renren-admin为后台模块，也是系统的核心，用来开发后台管理系统，可以打包成jar，部署到服务器上运行，或者打包成war，放到Tomcat8.5+容器里运行。
+renren-api为接口模块，主要是简化APP开发，如：为微信小程序、IOS、Android提供接口，拥有一套单独的用户体系，没有与renren-admin用户表共用，因为renren-admin用户表里存放的是企业内部人员账号，具有后台管理员权限，可以登录后台管理系统，而renren-api用户表里存放的是我们的真实用户，不具备登录后台管理系统的权限。renren-api主要是实现了用户注册、登录、接口权限认证、获取登录用户等功能，为APP接口的安全调用，提供一套优雅的解决方案，从而简化APP接口开发。
+renren-generator为代码生成器模块，只需在MySQL数据库里，创建好表结构，就可以生成新增、修改、删除、查询、导出等操作的代码，包括entity、mapper、dao、service、controller、页面等所有代码，项目开发神器。
+1.4.本地部署
+环境要求JDK1.8、Tomcat8.5+、MySQL5.5+
+通过git，下载renren-security源码，如下：
+git clone
+    git clone https://gitee.com/renrenio/renren-security.git
+ 
+用 idea 打开项目， File -> Open 如下图:
+
+
+用 eclipse 打开项目，如下图:
+
+
+
+
+
+
+创建数据库 renren_security ，数据库编码为 UTF-8
+执行数据库脚本，如MySQL数据库，则执行 db/mysql.sql 文件，初始化数据
+修改application-dev.yml，更改数据库账号和密码
+【启动renren-admin项目】
+运行io.renren.AdminApplication.java的main方法，则可启动renren-admin项目
+项目访问路径：http://localhost:8080/renren-admin
+账号密码：admin/admin
+Swagger路径：http://localhost:8080/renren-admin/swagger/index.html
+Swagger注解路径：http://localhost:8080/renren-admin/swagger-ui.html
+【启动renren-api项目】
+Eclipse、IDEA运行ApiApplication.java，则可启动项目【renren-api】
+Swagger路径：http://localhost:8081/renren-api/swagger-ui.html
+启动renren-generator项目】
+Eclipse、IDEA运行GeneratorApplication.java，则可启动项目【renren-generator】
+项目访问路径：http://localhost:8082/renren-generator
+1.5.获取帮助
+Git地址：https://gitee.com/renrenio/renren-security
+官方社区：http://www.renren.io/community
+如需寻求帮助、项目建议、技术讨论等，请移步到官方社区，我会在第一时间进行解答或回复
+如需关注项目最新动态，请Watch、Star项目，同时也是对项目最好的支持
+2.项目实战
+2.1.功能描述
+我们来完成一个商品的列表、添加、修改、删除功能，熟悉如何快速开发自己的业务功能模块。
+我们先建一个商品表tb_goods，表结构如下所示：
+create table
+      CREATE TABLE `tb_goods` (
+        `goods_id` bigint NOT NULL AUTO_INCREMENT,
+        `name` varchar(50) COMMENT '商品名',
+        `intro` varchar(500) COMMENT '介绍',
+        `price` decimal(10,2) COMMENT '价格',
+        `num` int COMMENT '数量',
+        PRIMARY KEY (`goods_id`)
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商品管理';
+         
+2.2.使用代码生成器
+使用代码生成器前，我们先来看下代码生成器的配置，看看那些是可配置的，打开renren-generator模块的配置文件generator.properties，如下所示:
+conf file
+    #代码生成器，配置信息
+    mainPath=io.renren
+    #包名
+    package=io.renren.modules
+    moduleName=demo
+    #作者
+    author=chenshun
+    #Email
+    email=sunlightcs@gmail.com
+    #表前缀(类名不会包含表前缀)
+    tablePrefix=tb_
+    #类型转换，配置信息
+    tinyint=Integer
+    smallint=Integer
+    mediumint=Integer
+    int=Integer
+    integer=Integer
+    bigint=Long
+    float=Float
+    double=Double
+    decimal=BigDecimal
+    bit=Boolean
+    char=String
+    varchar=String
+    tinytext=String
+    text=String
+    mediumtext=String
+    longtext=String
+    date=Date
+    datetime=Date
+    timestamp=Date
+         
+上面的配置文件，可以配置包名、作者信息、表前缀、模块名称、类型转换等信息。其中，类 型转换是指，MySQL中的类型与JavaBean中的类型，是怎么一个对应关系。如果有缺少的类 型，可自行在generator.properties文件中补充。
+
+再看看renren-generator模块的application.yml配置文件，我们只要修改数据库名、账 号、密码，就可以了。其中，数据库名是指待生成的表，所在的数据库。
+conf file
+            # Tomcat
+    server:
+        tomcat:
+            uri-encoding: UTF-8
+            max-threads: 1000
+            min-spare-threads: 30
+        port: 8082
+        context-path: /renren-generator
+    # mysql
+    spring:
+        datasource:
+            type: com.alibaba.druid.pool.DruidDataSource
+            driverClassName: com.mysql.jdbc.Driver
+            url: jdbc:mysql://localhost:3306/renren_security?useUnicode=true&characterEncoding=UTF-8
+            username: renren
+            password: 123456
+        jackson:
+            time-zone: GMT+8
+            date-format: yyyy-MM-dd HH:mm:ss
+        resources:
+                static-locations: classpath:/static/,classpath:/views/
+    # Mybatis配置
+    mybatis:
+        mapperLocations: classpath:mapper/**/*.xml
+         
+在数据库renren_security中，执行建表语句，创建tb_goods表，再启动renren-generator项目，运行GeneratorApplication.java的main方法即可
+项目访问路径：http://localhost:8082/renren-generator
+
+
+我们只需勾选tb_goods，点击【生成代码】按钮，则可生成相应代码，如下所示：
+
+我们来看下生成的代码结构，如下所示：
+
+sql语句也生成了
+生成好代码后，我们只需在数据库renren_security中，执行goods_menu.sql语句，这个SQL是生成菜单的，SQL语句如下所示：
+sql file
+    -- 菜单SQL
+    INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
+        VALUES ('48', '商品管理', 'modules/demo/goods.html', NULL, '1', 'larry-10109', '6');
+    -- 按钮父菜单ID
+    set @parentId = @@identity;
+    -- 菜单对应按钮SQL
+    INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
+        SELECT @parentId, '查看', null, 'demo:goods:list,demo:goods:info', '2', null, '6';
+    INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
+        SELECT @parentId, '新增', null, 'demo:goods:save', '2', null, '6';
+    INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
+        SELECT @parentId, '修改', null, 'demo:goods:update', '2', null, '6';
+    INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`)
+        SELECT @parentId, '删除', null, 'demo:goods:delete', '2', null, '6';
+    
+        
+接下来，再把main目录覆盖renren-admin里的main目录即可，启动renren-admin项目，如下所示：
+
+现在，我们就可以新增、修改、删除、批量删除等操作
+
+
+捐赠获取完整版
